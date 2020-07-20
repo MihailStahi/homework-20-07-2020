@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css pseudo - : target</title>
+    <style>
+        body{
+            font-family: Arial;
+        }
+.container{
+    background-color: rgb(203, 243, 203);
+    width: 800px;
+    height: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    }
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: #999;
+    width: 200px;
+    height: 700px;
+    float: left;    
+    }
+    li{
+        padding: 20px;
+    }
+    li:hover{
+        background-color: #777;
+        color: red;
+            transition: 1s;}
+
+  
+a{
+    text-decoration:none;
+    font-size: 22px;
+    color: white;
+    }
+.conntent{
+    /* background-color: green; */
+    width: 600px;
+    height: 700px;
+    float: right;
+    /* margin-top: -250px; */
+}
+h2{
+   padding-left: 10px;
+}
+p{
+    padding-left: 10px;
+}
+article{
+    height: 700px;
+    display: none;
+}
+#food-1:target{
+    display: block;
+    }
+#food-2:target{
+    display: block;
+    }
+#food-3:target{
+    display: block;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        
+        <ul>
+            <li><a href="#food-1">Salad</a></li>
+            <li><a href="#food-2">Pizza</a></li>
+            <li><a href="#food-3">Juice</a></li>
+        </ul>
+
+        <div class="conntent"> 
+<article id="food-1">
+    <h2>Salad</h2>    
+    <img src="https://www.simplyrecipes.com/wp-content/uploads/2017/10/2017-10-25-HarvestSalad-10-600x400.jpg">
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis cumque deserunt enim a quaerat fugiat rem cupiditate dolore aliquid, fuga, architecto minus eaque voluptatem, est rerum placeat non. Adipisci, ducimus?
+        Illo dolor provident sed quo fugit tenetur repellat at eligendi est, ipsa alias laudantium commodi error fugiat suscipit minus harum quasi. Quam nulla ullam labore itaque ipsum voluptatibus enim dignissimos!
+    </p>
+</article>
+<article id="food-2">
+    <h2>Pizza</h2>
+<img src="https://diez.md/wp-content/uploads/2015/03/pizzakarlschmidt.jpg" >
+    <p>Lorem ipsum dolor sit am
+    Vero aperiam dicta voluptas iste? Iusto vel velit, maxime libero quos necessitatibus modi. Perferendis vel earum dignissimos, ducimus officiis, saepe facilis laboriosam unde quam minus, quaerat ipsum libero ad animi!
+</p>
+</article>
+<article id="food-3">
+
+    <h2>Juice</h2>
+    <img src="https://probun.iamneni.com/wp-content/uploads/2019/01/aronia-berry-juice-600x400.jpg" >
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam consectetur nemo atque magni placeat. Reiciendis ad eum blanditiis quos incidunt consectetur, eos harum?
+    </p>
+</article>
+        </div>
+    </div>
+
+
+
+</body>
+</html>
+
